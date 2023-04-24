@@ -27,6 +27,8 @@ Under-fetching means that the client receives fewer data than it needs from the 
 To solve this problem, you might create another endpoint that returns both the user and posts data in one response, such as `/users/:userId/profile`. However, this is not a good idea because it couples your data and makes your API less flexible. You have to create multiple endpoints for different combinations of data and keep them updated.
 
 ### The solution with GraphQL ✨
+![image](https://user-images.githubusercontent.com/97989643/234090663-920502e9-80e4-4d6e-b06e-0be9e9507240.png)
+![image](https://user-images.githubusercontent.com/97989643/234091079-830c36dc-db67-4df1-bee6-556c563dc55a.png)
 
 GraphQL is a technology that solves these problems by allowing you to query and manipulate data from a server using a single endpoint. GraphQL stands for Graph Query Language. It is a syntax for describing the data that you want from the server. You can specify exactly what fields and properties you need, and the server will return only those data in a JSON format.
 
@@ -75,6 +77,8 @@ As you can see, GraphQL can solve both over-fetching and under-fetching problems
 ### How GraphQL works 🛠
 
 GraphQL works by using three main components: queries, mutations, and resolvers.
+
+![image](https://user-images.githubusercontent.com/97989643/234091653-ee2f75d4-062e-49c3-a6f3-d770b18f4902.png)
 
 #### Queries 📝
 
